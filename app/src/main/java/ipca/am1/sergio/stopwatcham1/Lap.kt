@@ -2,10 +2,12 @@ package ipca.am1.sergio.stopwatcham1
 
 import java.util.*
 
-data class Lap(   var index: Int,
-                  var lap : Int,
-                  var diff: Int) {
+data class Lap(
+        var index: Int,
+        var lap : Int,
+        var diff: Int
 
+        ) {
 
     companion object{
         fun convertToDuration(increment : Int):String{
@@ -14,7 +16,7 @@ data class Lap(   var index: Int,
             val millis = (increment % 90)
 
             return  String.format(
-                Locale.FRANCE,
+                Locale.US,
                 "%02d:%02d:%02d",
                 minute, second, millis)
         }

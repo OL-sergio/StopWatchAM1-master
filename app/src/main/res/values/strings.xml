@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">StopWatchAM1</string>
-    <string name="start">Start</string>
     <string name="pause">Pause</string>
     <string name="lap">Lap</string>
+    <string name="reset">Reset</string>
+    <string name="start">Start</string>
 </resources>

@@ -46,11 +46,11 @@ class LapAdapter(
             viewHolder = view.tag as ViewHolder
         }
         val lap = laps[p]
-        viewHolder.tvDiff.text = lap.index.toString()
-        viewHolder.tvDuration.text = lap.index.toString(lap.lap)
-        viewHolder.tvDiff.text = lap.index.toString(lap.diff)
+        viewHolder.tvIndex.text = lap.index.toString()
+        viewHolder.tvDuration.text = Lap.convertToDuration(lap.lap)
+        viewHolder.tvDiff.text = Lap.convertToDuration(lap.diff)
 
-       return view
+        return view
 
     }
     private class ViewHolder(itemView: View) {

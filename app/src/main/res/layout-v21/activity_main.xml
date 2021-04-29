@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:background="#0A112E">
 
     <RelativeLayout
         android:id="@+id/_relative_layout"
@@ -13,7 +13,7 @@
         android:layout_marginBottom="-30dp">
 
         <com.triggertrap.seekarc.SeekArc
-            android:id="@+id/sa_time"
+            android:id="@+id/sa_start_time"
             android:layout_width="350dp"
             android:layout_height="350dp"
             android:layout_centerInParent="true"
@@ -25,14 +25,14 @@
             />
 
         <Button
-            android:id="@+id/btn_time"
+            android:id="@+id/btn_start_time"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="227dp"
             android:layout_height="206dp"
             android:layout_centerInParent="true"
-            android:background="@drawable/ic_round_buttons"
             android:text="@string/start"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
             android:textSize="50sp" />
 
     </RelativeLayout>
@@ -45,7 +45,9 @@
         android:layout_alignParentStart="true"
         android:background="@drawable/ic_round_buttons"
         android:layout_marginStart="30dp"
-        android:backgroundTint="@color/btn_selector"
+        android:backgroundTint="#C3ED0202"
+        android:textSize="16sp"
+        android:textStyle="bold"
         android:text="@string/pause" />
 
     <Button
@@ -56,7 +58,9 @@
         android:layout_alignParentEnd="true"
         android:background="@drawable/ic_round_buttons"
         android:layout_marginEnd="30dp"
-        android:backgroundTint="@color/btn_selector2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#C3ED0202"
         android:text="@string/lap" />
 
     <ListView
@@ -64,6 +68,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_pause"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="@color/design_default_color_background"
+        />
 
 </RelativeLayout>
