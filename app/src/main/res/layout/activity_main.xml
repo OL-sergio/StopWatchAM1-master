@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-30dp">
+
+        <com.triggertrap.seekarc.SeekArc
+            android:id="@+id/sa_time"
+            android:layout_width="match_parent"
+            android:layout_height="342dp"
+            android:padding="50dp"
+            app:arcColor="@android:color/darker_gray"
+            app:arcWidth="5dp"
+            app:progress="50"
+            app:progressWidth="10dp" />
+
+        <Button
+            android:id="@+id/btn_time"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="217dp"
+            android:layout_height="189dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_round_buttons"
+            android:text="@string/start"
+            android:textColor="@android:color/black"
+            android:textSize="50sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/_relative_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/ic_round_buttons"
+        android:backgroundTint="@color/btn_selector"
+        android:text="@string/pause" />
+
+    <Button
+        android:id="@+id/btn_lap_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/_relative_layout"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_round_buttons"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/btn_selector2"
+        android:text="@string/lap" />
+
+    <ListView
+        android:id="@+id/lv_lap_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_pause"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
